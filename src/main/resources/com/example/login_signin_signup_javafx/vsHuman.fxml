@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="559.0" prefWidth="819.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login_signin_signup_javafx.vsHumanController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="background-pane">
+         <children>
+            <ImageView fitHeight="556.0" fitWidth="494.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@tic_tac_toe_back.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn3" layoutX="309.0" layoutY="193.0" mnemonicParsing="false" onAction="#func3" prefHeight="106.0" prefWidth="96.0" style="-fx-background-color: #ffffff;" textFill="#ef5f3b">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="50.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn6" layoutX="314.0" layoutY="310.0" mnemonicParsing="false" onAction="#func6" prefHeight="106.0" prefWidth="96.0" style="-fx-background-color: #ffffff;" textFill="#ef5f3b">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="50.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn9" layoutX="309.0" layoutY="430.0" mnemonicParsing="false" onAction="#func9" prefHeight="94.0" prefWidth="96.0" style="-fx-background-color: #ffffff;" textFill="#ef5f3b">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="50.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn2" layoutX="188.0" layoutY="196.0" mnemonicParsing="false" onAction="#func2" prefHeight="94.0" prefWidth="106.0" style="-fx-background-color: #ffffff;" textFill="#ef5f3b">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="50.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn5" layoutX="187.0" layoutY="310.0" mnemonicParsing="false" onAction="#func5" prefHeight="106.0" prefWidth="106.0" style="-fx-background-color: #ffffff;" textFill="#ef5f3b">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="50.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn8" layoutX="187.0" layoutY="428.0" mnemonicParsing="false" onAction="#func8" prefHeight="98.0" prefWidth="108.0" style="-fx-background-color: #ffffff;" textFill="#ef5f3b">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="50.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn1" layoutX="71.0" layoutY="193.0" mnemonicParsing="false" onAction="#func1" prefHeight="94.0" prefWidth="106.0" style="-fx-background-color: #ffffff;" textFill="#ef5f3b">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="50.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn4" layoutX="76.0" layoutY="310.0" mnemonicParsing="false" onAction="#func4" prefHeight="106.0" prefWidth="96.0" style="-fx-background-color: #ffffff;" textFill="#ef5f3b">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="50.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn7" layoutX="76.0" layoutY="427.0" mnemonicParsing="false" onAction="#func7" prefHeight="101.0" prefWidth="96.0" style="-fx-background-color: #ffffff;" textFill="#ef5f3b">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="50.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="559.0" prefWidth="344.0" style="-fx-background-color: #ff09;">
+         <children>
+            <Button fx:id="reset" layoutX="30.0" layoutY="380.0" mnemonicParsing="false" onAction="#reset" prefHeight="106.0" prefWidth="286.0" style="-fx-background-color: #ffffff;" text="Reset" textFill="#ef5f3b">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="55.0" />
+               </font>
+            </Button>
+            <Button fx:id="newgame" layoutX="12.0" layoutY="258.0" mnemonicParsing="false" onAction="#newGame" prefHeight="106.0" prefWidth="322.0" style="-fx-background-color: #ffffff;" text="New game" textFill="#ef5f3b">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="46.0" />
+               </font>
+            </Button>
+            <Label fx:id="lbl_playerX" layoutX="23.0" layoutY="120.0" prefHeight="35.0" prefWidth="96.0" style="-fx-background-color: #ffff;" text="Player X:" textFill="#ef5f3b">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_playerO" layoutX="23.0" layoutY="173.0" prefHeight="39.0" prefWidth="96.0" style="-fx-background-color: #ffff;" text="Player O:" textFill="#ef5f3b">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="scoreOfO" alignment="CENTER" layoutX="158.0" layoutY="173.0" prefHeight="39.0" prefWidth="96.0" style="-fx-background-color: #ffff;" textAlignment="CENTER">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="24.0" />
+               </font></Label>
+            <Label fx:id="ScoreOfX" alignment="CENTER" layoutX="158.0" layoutY="118.0" prefHeight="39.0" prefWidth="96.0" style="-fx-background-color: #ffff;" textFill="#ef5f3b">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+               </font></Label>
+            <Button fx:id="logOut" layoutX="199.0" layoutY="511.0" mnemonicParsing="false" onAction="#goto_login_page" prefHeight="39.0" prefWidth="133.0" style="-fx-background-color: #ffffff;" text="GO to Home Page" textFill="#ef5f3b">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="114.0" layoutY="48.0" style="-fx-background-color: #ffff;" text="Score" textFill="#ef5f3b">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</HBox>
